@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="oformleniezakaza.css" rel="stylesheet">
+    <script type="text/javascript" src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <div class="row">
+        <header class="navbar navbar-expand-lg text-bg-dark p-6 ">
+          <a href="https://yandex.ru/profile/236086236677" class="container navbar-brand col-md-2 color-light">Taverna</a>
+          <div class="container col-md-6 color-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse color-light" id="navbarNavDropdown">
+              <ul class="navbar-nav color-light col-md-8 ">
+                <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Горячее
+                  </a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Холодное
+                  </a>
+                  <li class="nav-item"><a class="nav-link" href="#">Свежая выпечка</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Десерты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Напитки</a></li>
+                <li class="nav-item dropdown">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container col-md-3" >
+          <img src="img/search.png" alt="search">
+          <img src="img/profile.png" alt="profile">
+          <img src="img/korzina.png" alt="korzina">
+        </div>
+        </header>
+      </div>
+
+      <main class="container d-flex flex-column">
+        <div class="d-flex col-12">
+            <div class="col-7 d-flex flex-column">
+                <div class="row mt-5 ">
+                    <div class="col-12">
+                      <h1>Оформление заказа</h1>
+                      <div class="row">
+                        <div class="col-3">
+                            <p>Главная / Корзина / <span>Оформление заказа</span></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>01. Контактные данные</h2>
+                            <hr style="color: white;">
+                            <p>Уже покупали у нас?</p>
+                            <p>Войдите в личный кабинет, и все ваши данные автоматически заполнятся</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Телефон</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="personCount" class="form-label">Количество персон</label>
+                                    <input type="number" class="form-control" id="personCount" placeholder="Введите количество персон">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="COL-M" style="padding-top: 280px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Кол-во</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Хачапури по-аджарски</td>
+                            <td>1</td>
+                            <td>425 P</td>
+                        </tr>
+                        <tr>
+                            <td>Ланч низкокалорийный</td>
+                            <td>2</td>
+                            <td>1050 P</td>
+                        </tr>
+                        <tr>
+                            <td>Хинкали жаренные. Из баранины с таркуном</td>
+                            <td>1</td>
+                            <td>690 P</td>
+                        </tr>
+                        <tr>
+                            <td>Оджахури из телятины</td>
+                            <td>2</td>
+                            <td>355 P</td>
+                        </tr>
+                        <tr>
+                            <td>Долма. С бараниной</td>
+                            <td>2</td>
+                            <td>490 Р</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Итого:</td>
+                            <td>2580 P</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </diV>
+        </div>
+    
+        </div>
+    <div class="container">
+        <h2 class="text-center">02. Способы доставки</h2>
+        <hr style="color: white;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Бесконтактная доставка</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Стоимость: 150 рублей</p>
+                        <p class="card-text">Время доставки: от 1 до 1.5 часов</p>
+                        <p class="card-text">Диапазон времени: ежедневно с 11:00 до 23:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Самовывоз</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Стоимость: 0 рублей</p>
+                        <p class="card-text">Адрес:Нижнеимеретинская ул., 159А, п. г. т. Сириус</p>
+                        <p class="card-text">Время работы: с 11:00 до 23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+            <h2 class="text-center">Адрес доставки</h2>
+            <hr style="color: white;">
+                <form>
+                    <div class="row">
+                    <div class="col">
+                        <label for="street">Улица:</label>
+                        <input type="text" class="form-control" id="street" placeholder="Введите улицу">
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col">
+                    <label for="house">Дом:</label>
+                    <input type="number" class="form-control" id="house" placeholder="Введите номер дома">
+                </div>  
+                    <div class="col">
+                        <label for="apartment">Квартира:</label>
+                        <input type="number" class="form-control" id="apartment" placeholder="Введите номер квартиры">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="comment">Комментарий к заказу:</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Отправить</button>
+                </form>
+
+            </div>
+            
+    </div>
+</div>
+
+    <div class="container">
+        <h2 class="text-center">03. Оплата</h2>
+        <hr style="color: white;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Способы оплаты</h2>
+                <div class="form-group">
+                    <label for="payment_method">Способ оплаты:</label>
+                    <select class="form-select" id="payment_method">
+                      <option value="card">Банковская карта/Электронные деньги</option>
+                      <option value="ewallet">Наличными курьеру</option>
+                      <option value="other">Картой курьеру</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="col-md-6">
+                  <h2>Сумма пополнения</h2>
+          
+                  <div class="form-group">
+                    <label for="amount">Сумма:</label>
+                    <input type="number" class="form-control" id="amount">
+                  </div>
+          
+                  <button type="submit" class="btn btn-primary"style="margin-top: 10px;" >Пополнить</button>
+                </div>
+              </div>
+            </div>
+               <div class="row mt-3">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">Подтвердить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3" style="margin-top: 1px;">
+                <h5 class="text-uppercase">Обратная связь</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://yandex.ru/profile/236086236677">info@taverna.com</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=79195554365&text&type=phone_number&app_absent=0">+7 (919) 555-43-65</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3" style="margin-top: 1px;">
+                <h5 class="text-uppercase">Доставка</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">О доставке</a></li>
+                    <li><a href="#">Отследить заказ</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3" style="margin-top: 1px;">
+                <h5 class="text-uppercase">Оплата</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Способы оплаты</a></li>
+                    <li><a href="#">Безопасная оплата</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3" style="margin-top: 1px;">
+                <h5 class="text-uppercase">Контакты</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                &copy; 2012-2024, TAVERNA, официальный сайт
+            </div>
+        </div>
+    </div>
+  </footer>
+
+      <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

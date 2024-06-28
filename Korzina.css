@@ -1,0 +1,64 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('img/фон.jpeg');
+    background-size: cover; /* размер одного повторяющегося изображения */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    color: #f5f5f5;
+    font-family: Lucida Console, Monaco, monospace;
+  }
+  .nav-link{
+  color: #f5f5f5;
+  align-items: center;
+  }
+  h1{
+    color: #f5f5f5;
+    font-size: 50px;
+
+  }
+  .col-3{
+    color: #f5f5f5;
+  }
+  .col-3 span{
+    color: darkgrey;
+  }
+  .menu {
+    margin-bottom: 30px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.menu th, .menu td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+
+/* Стилизация кнопки заказа */
+.order-button {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+h3 {
+    color: #f5f5f5;
+}
+.btn-primary btn-lg btn-block{
+    margin-bottom: 0%;
+}
+
+table{
+    background-color: rgb(113, 182, 214)!important;
+    --bs-table-bg:none!important;
+}

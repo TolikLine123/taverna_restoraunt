@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>korzina</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Korzina.css" rel="stylesheet">
+    <script type="text/javascript" src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <header class="navbar navbar-expand-lg text-bg-dark p-6">
+          <a href="https://yandex.ru/profile/236086236677" class="container navbar-brand col-md-2 color-light">Taverna</a>
+          <div class="container col-md-6 color-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse color-light" id="navbarNavDropdown">
+              <ul class="navbar-nav color-light col-md-8">
+                <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Горячее
+                  </a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Холодное
+                  </a>
+                  <li class="nav-item"><a class="nav-link" href="#">Свежая выпечка</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Десерты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Напитки</a></li>
+                <li class="nav-item dropdown">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container col-md-3" >
+          <img src="img/search.png" alt="search">
+          <img src="img/profile.png" alt="profile">
+          <img src="img/korzina.png" alt="korzina">
+        </div>
+        </header>
+      </div>
+
+      <main class="container">
+        <div class="row mt-5">
+          <div class="col-12">
+            <h1>Корзина</h1>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-3">
+            <p>Главная / <span>Корзина</span></p>
+        </div>
+        </div>
+      </main>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Блюдо</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Сумма</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Хачапури по-аджарски</td>
+                <td class="price">425</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">425</td>
+            </tr>
+            <tr>
+                <td>Долма</td>
+                <td class="price">550</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">550</td>
+            </tr>
+            <tr>
+                <td>Бургер бодрый цыпленок</td>
+                <td class="price">670</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">670</td>
+            </tr>
+            <tr>
+                <td>Стейк из лосося с овощами</td>
+                <td class="price">1200</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">1200</td>
+            </tr>
+            <tr>
+                <td>Хинкали традиционные</td>
+                <td class="price">495</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">495</td>
+            </tr>
+            <tr>
+                <td>Пивная тарелка</td>
+                <td class="price">1080</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">1080</td>
+            </tr>
+            <tr>
+                <td>Пицца гавайская-с-ветчиной</td>
+                <td class="price">510</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">510</td>
+            </tr>
+            <tr>
+                <td>Осетинский пирог с картофелем</td>
+                <td class="price">700</td>
+                <td><input type="number" class="form-control qty" value="1" min="1"></td>
+                <td class="sum">700</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <main class="container mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Применить промокод</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="promoCode" placeholder="Введите промокод">
+                            </div>
+                            <button type="submit" class="btn btn-primary"  style="margin-top: 10px;">Применить</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Итого к оплате</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="h4" id="total">3340 Р</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+              <a href="оформления заказа.html"><button type="button"class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">Оформить заказ</button></a>
+                </div>
+            </div>
+        </main>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3" style="margin-top: 1px;">
+                    <h5 class="text-uppercase">Обратная связь</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://yandex.ru/profile/236086236677">info@taverna.com</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=79195554365&text&type=phone_number&app_absent=0">+7 (919) 555-43-65</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3" style="margin-top: 1px;">
+                    <h5 class="text-uppercase">Доставка</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">О доставке</a></li>
+                        <li><a href="#">Отследить заказ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3" style="margin-top: 1px;">
+                    <h5 class="text-uppercase">Оплата</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Безопасная оплата</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3" style="margin-top: 1px;">
+                    <h5 class="text-uppercase">Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    &copy; 2012-2024, 000 TAVERNA», официальный сайт
+                </div>
+            </div>
+        </div>
+      </footer>
+
+     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
