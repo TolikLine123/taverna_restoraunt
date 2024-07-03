@@ -1,3 +1,29 @@
+@media (max-width: 768px) {
+    header{
+        width: 500px;
+    }
+    .img2{
+        display: none;
+    }
+    .main-text p{
+        display: none;
+        margin-left: 300px;
+    }
+    .dd2{
+        transform: none;
+        margin-right: 100px;
+    }
+}
+@media (max-width: 320px) {
+    .dd2{
+        transform: none;
+    }
+}
+.dd2 img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url('img/фон.jpeg');

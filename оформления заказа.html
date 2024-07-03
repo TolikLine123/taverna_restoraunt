@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="oformleniezakaza.css" rel="stylesheet">
-    <script type="text/javascript" src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
     <title>Оформление заказа</title>
 </head>
 <body>
+
     <div class="row">
         <header class="navbar navbar-expand-lg text-bg-dark p-6 ">
           <a href="https://yandex.ru/profile/236086236677" class="container navbar-brand col-md-2 color-light">Taverna</a>
@@ -34,7 +34,7 @@
               </ul>
             </div>
           </div>
-          <div class="container col-md-3" >
+          <div class="container col-md-3">
           <img src="img/search.png" alt="search">
           <img src="img/profile.png" alt="profile">
           <img src="img/korzina.png" alt="korzina">
@@ -160,39 +160,32 @@
             </div>
         </div>
 
- 
-            <h2 class="text-center">Адрес доставки</h2>
-            <hr style="color: white;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Адрес доставки</h2>
+                <hr style="color: white;">
                 <form>
-                    <div class="row">
-                    <div class="col">
+                    <div class="form-group">
                         <label for="street">Улица:</label>
                         <input type="text" class="form-control" id="street" placeholder="Введите улицу">
                     </div>
-                </div>
-                <div class="row">
-                <div class="col">
-                    <label for="house">Дом:</label>
-                    <input type="number" class="form-control" id="house" placeholder="Введите номер дома">
-                </div>  
-                    <div class="col">
+                    <div class="form-group">
+                        <label for="house">Дом:</label>
+                        <input type="number" class="form-control" id="house" placeholder="Введите номер дома">
+                    </div>
+                    <div class="form-group">
                         <label for="apartment">Квартира:</label>
                         <input type="number" class="form-control" id="apartment" placeholder="Введите номер квартиры">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
+                    <div class="form-group">
                         <label for="comment">Комментарий к заказу:</label>
                         <textarea class="form-control" id="comment" rows="3"></textarea>
                     </div>
-                </div>
                     <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Отправить</button>
                 </form>
-
             </div>
-            
+        </div>
     </div>
-</div>
 
     <div class="container">
         <h2 class="text-center">03. Оплата</h2>
@@ -200,28 +193,12 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Способы оплаты</h2>
-                <div class="form-group">
-                    <label for="payment_method">Способ оплаты:</label>
-                    <select class="form-select" id="payment_method">
-                      <option value="card">Банковская карта/Электронные деньги</option>
-                      <option value="ewallet">Наличными курьеру</option>
-                      <option value="other">Картой курьеру</option>
-                    </select>
-                  </div>
+                <div class="list-group">
+                    <a href="https://yandex.ru/images/search?family=yes&img_url=https%3A%2F%2Fpelibox.ru%2Fwp-content%2Fuploads%2F2019%2F02%2Fcard.png&lr=51&pos=0&rpt=simage&source=serp&text=%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B9%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D1%83" class="list-group-item list-group-item-action">Банковские карты / Электронные деньги / Другое</a>
+                    <a href="https://yandex.ru/images/search?family=yes&img_url=https%3A%2F%2Fmoto-express.org%2Fupload%2Fiblock%2F2b4%2F2b446f8d75211cad5668464fa5e2f4e6.jpg&lr=51&pos=0&rpt=simage&source=serp&text=%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D1%83" class="list-group-item list-group-item-action">Наличными курьеру</a>
+                    <a href="https://yandex.ru/images/search?family=yes&img_url=https%3A%2F%2Fpelibox.ru%2Fwp-content%2Fuploads%2F2019%2F02%2Fcard.png&lr=51&pos=0&rpt=simage&source=serp&text=%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B9%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D1%83" class="list-group-item list-group-item-action">Картой курьеру</a>
                 </div>
-          
-                <div class="col-md-6">
-                  <h2>Сумма пополнения</h2>
-          
-                  <div class="form-group">
-                    <label for="amount">Сумма:</label>
-                    <input type="number" class="form-control" id="amount">
-                  </div>
-          
-                  <button type="submit" class="btn btn-primary"style="margin-top: 10px;" >Пополнить</button>
-                </div>
-              </div>
-            </div>
+               </div>
                <div class="row mt-3">
                 <div class="col-12">
                     <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">Подтвердить заказ</button>
@@ -233,28 +210,28 @@
 <footer class="footer mt-auto py-3 bg-dark text-white">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-md-3" style="margin-top: 1px;">
+            <div class="col-6 col-md-3">
                 <h5 class="text-uppercase">Обратная связь</h5>
                 <ul class="list-unstyled">
                     <li><a href="https://yandex.ru/profile/236086236677">info@taverna.com</a></li>
                     <li><a href="https://api.whatsapp.com/send/?phone=79195554365&text&type=phone_number&app_absent=0">+7 (919) 555-43-65</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3" style="margin-top: 1px;">
+            <div class="col-6 col-md-3">
                 <h5 class="text-uppercase">Доставка</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">О доставке</a></li>
                     <li><a href="#">Отследить заказ</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3" style="margin-top: 1px;">
+            <div class="col-6 col-md-3">
                 <h5 class="text-uppercase">Оплата</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Способы оплаты</a></li>
                     <li><a href="#">Безопасная оплата</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3" style="margin-top: 1px;">
+            <div class="col-6 col-md-3">
                 <h5 class="text-uppercase">Контакты</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">О компании</a></li>
